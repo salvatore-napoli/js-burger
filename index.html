@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Burger</title>
+  </head>
+  <body>
+    <header>
+      <h1>Create your burger</h1>
+    </header>
+
+    <main>
+      <input type="text" name="burger-name" placeholder="Name your burger">
+      <h2>Ingredients</h2>
+      <div class="ingredient">
+        <span>Cheese</span>
+        <input type="checkbox" id="cheese-add">
+        <label for="cheese-add">add</label>
+      </div>
+
+      <div class="ingredient">
+        <span>Tomato</span>
+        <input type="checkbox" id="tomato-add">
+        <label for="tomato-add">add</label>
+      </div>
+
+      <div class="ingredient">
+        <span>Egg</span>
+        <input type="checkbox" id="egg-add">
+        <label for="egg-add">add</label>
+      </div>
+
+      <div class="ingredient">
+        <span>Lettuce</span>
+        <input type="checkbox" id="lettuce-add">
+        <label for="lettuce-add">add</label>
+      </div>
+
+      <div class="ingredient">
+        <span>Mustard</span>
+        <input type="checkbox" id="mustard-add">
+        <label for="mustard-add">add</label>
+      </div>
+
+      <div class="ingredient">
+        <span>Ketchup</span>
+        <input type="checkbox" id="ketchup-add">
+        <label for="ketchup-add">add</label>
+      </div>
+
+      <label for="coupon">Discount Coupon</label>
+      <input type="text" id="coupon" placeholder="12354ABCDEF">
+
+      <div class="">
+        <button type="button" id="form-submit">calculate</button>
+      </div>
+    </main>
+
+    <footer>
+      <span>Your Price</span>
+      <span id="total-price">$ 50</span>
+    </footer>
+  </body>
+</html>
