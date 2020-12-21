@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
     <title>Burger</title>
   </head>
   <body>
@@ -12,46 +13,46 @@
     <main>
       <input type="text" name="burger-name" placeholder="Name your burger">
       <h2>Ingredients</h2>
-      <div class="ingredient">
+      <div>
         <span>Cheese</span>
-        <input type="checkbox" id="cheese-add">
+        <input type="checkbox" id="cheese-add" name="ingredient">
         <label for="cheese-add">add</label>
       </div>
 
-      <div class="ingredient">
+      <div>
         <span>Tomato</span>
-        <input type="checkbox" id="tomato-add">
+        <input type="checkbox" id="tomato-add" name="ingredient">
         <label for="tomato-add">add</label>
       </div>
 
-      <div class="ingredient">
+      <div>
         <span>Egg</span>
-        <input type="checkbox" id="egg-add">
+        <input type="checkbox" id="egg-add" name="ingredient">
         <label for="egg-add">add</label>
       </div>
 
-      <div class="ingredient">
+      <div>
         <span>Lettuce</span>
-        <input type="checkbox" id="lettuce-add">
+        <input type="checkbox" id="lettuce-add" name="ingredient">
         <label for="lettuce-add">add</label>
       </div>
 
-      <div class="ingredient">
+      <div>
         <span>Mustard</span>
-        <input type="checkbox" id="mustard-add">
+        <input type="checkbox" id="mustard-add" name="ingredient">
         <label for="mustard-add">add</label>
       </div>
 
-      <div class="ingredient">
+      <div>
         <span>Ketchup</span>
-        <input type="checkbox" id="ketchup-add">
+        <input type="checkbox" id="ketchup-add" name="ingredient">
         <label for="ketchup-add">add</label>
       </div>
 
       <label for="coupon">Discount Coupon</label>
       <input type="text" id="coupon" placeholder="12354ABCDEF">
 
-      <div class="">
+      <div>
         <button type="button" id="form-submit">calculate</button>
       </div>
     </main>
@@ -60,5 +61,7 @@
       <span>Your Price</span>
       <span id="total-price">$ 50</span>
     </footer>
+
+    <script src="js/script.js" charset="utf-8"></script>
   </body>
 </html>
