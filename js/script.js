@@ -2,7 +2,7 @@ var burgerName = document.getElementsByName('burger-name')[0];
 var ingredients = document.getElementsByName('ingredient');
 var minIngredients = 2;
 var checkedIngredients;
-var enoughChecked = false;
+var enoughChecked;
 
 var couponCodes = ['65849RIUFRJ', '76584UHJBGF', '09872MJCKOS'];
 var totalPriceElement = document.getElementById('total-price');
@@ -17,6 +17,7 @@ document.getElementById('form-submit').addEventListener('click', function () {
 
     // Obbligo di scelta degli ingredienti
     checkedIngredients = [];
+    enoughChecked = false;
     for (var i = 0; i < ingredients.length; i++) {
       if (ingredients[i].checked) {
         checkedIngredients.push(ingredients[i]);

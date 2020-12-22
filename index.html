@@ -9,54 +9,70 @@
   </head>
   <body>
     <div class="page-container">
-      <div class="burger-container">
-        <header class="pad-l-r-30">
+      <div class="w50">
+        <header class="background-orange">
           <h1>Create Your Burger</h1>
+          <div class="burger-img background-orange">
+            <img src="img/burger-top.png" alt="burger">
+          </div>
         </header>
 
         <main>
           <input type="text" id="burger-name" class="text-field" name="burger-name" placeholder="Name Your Burger">
-          <h2 class="pad-top-30">Ingredients</h2>
-          <div class="ingredient-item">
-            <span>Cheese</span>
-            <input type="checkbox" id="cheese" name="ingredient" value="3">
-            <span class="checkbox-style-1"></span>
-            <label for="cheese" class="ingredient-label">add</label>
+          <h2 class="pad-top-30 font-19">Ingredients</h2>
+
+          <div class="flex">
+            <label for="cheese" class="ingredient-label w50">
+              <img src="img/cheese.svg" alt="formaggio">
+              <span class="font-08em">Cheese</span>
+              <input type="checkbox" id="cheese" name="ingredient" value="3">
+              <span class="checkbox-style-1"></span>
+              <span class="ingredient-add font-08em">add</span>
+            </label>
+
+            <label for="tomato" class="ingredient-label w50">
+              <img src="img/tomato.svg" alt="pomodoro">
+              <span class="font-08em">Tomato</span>
+              <input type="checkbox" id="tomato" name="ingredient" value="1">
+              <span class="checkbox-style-1"></span>
+              <span class="ingredient-add font-08em">add</span>
+            </label>
           </div>
 
-          <div class="ingredient-item">
-            <span>Tomato</span>
-            <input type="checkbox" id="tomato" name="ingredient" value="1">
-            <span class="checkbox-style-1"></span>
-            <label for="tomato" class="ingredient-label">add</label>
+          <div class="flex pad-top-15">
+            <label for="egg" class="ingredient-label w50">
+              <img src="img/fried-egg.svg" alt="uovo fritto">
+              <span class="font-08em">Egg</span>
+              <input type="checkbox" id="egg" name="ingredient" value="1.2">
+              <span class="checkbox-style-1"></span>
+              <span class="ingredient-add font-08em">add</span>
+            </label>
+
+            <label for="lettuce" class="ingredient-label w50">
+              <img src="img/lettuce.svg" alt="lattuga">
+              <span class="font-08em">Lettuce</span>
+              <input type="checkbox" id="lettuce" name="ingredient" value="0.75">
+              <span class="checkbox-style-1"></span>
+              <span class="ingredient-add font-08em">add</span>
+            </label>
           </div>
 
-          <div class="ingredient-item">
-            <span>Egg</span>
-            <input type="checkbox" id="egg" name="ingredient" value="1.2">
-            <span class="checkbox-style-1"></span>
-            <label for="egg" class="ingredient-label">add</label>
-          </div>
+          <div class="flex pad-top-15">
+            <label for="mustard" class="ingredient-label w50">
+              <img src="img/mustard.svg" alt="mostarda">
+              <span class="font-08em">Mustard</span>
+              <input type="checkbox" id="mustard" name="ingredient" value="0.5">
+              <span class="checkbox-style-1"></span>
+              <span class="ingredient-add font-08em">add</span>
+            </label>
 
-          <div class="ingredient-item">
-            <span>Lettuce</span>
-            <input type="checkbox" id="lettuce" name="ingredient" value="0.75">
-            <span class="checkbox-style-1"></span>
-            <label for="lettuce" class="ingredient-label">add</label>
-          </div>
-
-          <div class="ingredient-item">
-            <span>Mustard</span>
-            <input type="checkbox" id="mustard" name="ingredient" value="0.5">
-            <span class="checkbox-style-1"></span>
-            <label for="mustard" class="ingredient-label">add</label>
-          </div>
-
-          <div class="ingredient-item">
-            <span>Ketchup</span>
-            <input type="checkbox" id="ketchup" name="ingredient" value="0.4">
-            <span class="checkbox-style-1"></span>
-            <label for="ketchup" class="ingredient-label">add</label>
+            <label for="ketchup" class="ingredient-label w50">
+              <img src="img/ketchup.svg" alt="ketchup">
+              <span class="font-08em">Ketchup</span>
+              <input type="checkbox" id="ketchup" name="ingredient" value="0.4">
+              <span class="checkbox-style-1"></span>
+              <span class="ingredient-add font-08em">add</span>
+            </label>
           </div>
 
           <div class="pad-top-30">
@@ -65,12 +81,12 @@
           </div>
 
           <div class="form-button">
-            <button type="button" id="form-submit" class="text-bold">calculate</button>
+            <button type="button" id="form-submit" class="text-bold background-orange">calculate</button>
           </div>
         </main>
 
         <footer class="clearfix">
-          <div class="left-floated">
+          <div class="left-floated font-19">
             <span class="text-white text-bold">Your Price</span>
           </div>
           <div class="price right-floated">
