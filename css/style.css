@@ -96,7 +96,7 @@ header {
   padding-left: 35px;
   height: 15%;
   position: relative;
-  line-height: 120px;
+  line-height: 110px;
 }
 
 header .burger-img {
@@ -162,6 +162,7 @@ main .ingredient-label input:checked ~ .checkbox-style-1:after {
 main .ingredient-label .ingredient-add {
   padding-left: 40px;
   color: #D33359;
+  cursor: pointer;
 }
 
 main > label[for="coupon"] {
