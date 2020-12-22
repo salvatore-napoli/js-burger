@@ -1,0 +1,130 @@
+/* Utility class */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.left-floated {
+  float: left;
+}
+
+.right-floated {
+  float: right;
+}
+
+.clearfix::after {
+  display: table;
+  clear: both;
+  content: '';
+}
+
+.text-white {
+  color: white;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.text-field {
+  border: 0;
+}
+
+.checkbox-style-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  background-color: #D33359;
+  margin: 0 10px 0 15px;
+}
+
+.pad-top-30 {
+  padding-top: 30px;
+}
+/* end Utility class */
+
+.page-container {
+  background-color: #FFF5E2;
+  font-family: 'Roboto', sans-serif;
+  height: 100vh;
+}
+
+.burger-container {
+  width: 45%;
+}
+
+header {
+  background-color: #FDBB40;
+  padding: 0 35px;
+}
+
+h1 {
+  font-size: 25px;
+}
+
+main {
+  background-color: white;
+  padding: 30px 35px 100px;
+}
+
+#burger-name {
+  font-size: 21px;
+  background-color: transparent;
+}
+
+main > h2 {
+  font-weight: normal;
+  font-size: 19px;
+  padding-bottom: 15px;
+}
+
+main .ingredient-item input {
+  
+}
+
+main .ingredient-label {
+  color: #f93982;
+  position: relative;
+}
+
+main > label[for="coupon"] {
+  font-size: 15px;
+}
+
+#coupon {
+  background-color: #FFF5E2;
+  border-radius: 5px;
+  height: 25px;
+  line-height: 25px;
+  width: 350px;
+}
+
+main > .form-button {
+  text-align: center;
+}
+
+#form-submit {
+  background-color: #FDBB40;
+  padding: 10px 18px;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+footer {
+  padding: 20px 35px 40px;
+  background-color: #D33359;
+}
+
+footer > .left-floated {
+  font-size: 19px;
+}
+
+footer .price {
+  font-size: 22px;
+}

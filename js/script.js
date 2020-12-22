@@ -1,10 +1,13 @@
 var burgerName = document.getElementsByName('burger-name')[0];
 var ingredients = document.getElementsByName('ingredient');
-var checkedIngredients = [];
+var minIngredients = 2;
+var checkedIngredients;
+var enoughChecked = false;
 
 var couponCodes = ['65849RIUFRJ', '76584UHJBGF', '09872MJCKOS'];
 var totalPriceElement = document.getElementById('total-price');
 var parsedPrice = parseInt(totalPriceElement.innerHTML);
+var totalPrice;
 
 document.getElementById('form-submit').addEventListener('click', function () {
   // Obbligo di scelta del nome
@@ -14,24 +17,23 @@ document.getElementById('form-submit').addEventListener('click', function () {
 
     // Obbligo di scelta degli ingredienti
     checkedIngredients = [];
-    var twoChecked = false;
     for (var i = 0; i < ingredients.length; i++) {
       if (ingredients[i].checked) {
         checkedIngredients.push(ingredients[i]);
       }
-      if (checkedIngredients.length >= 2) {
-        twoChecked = true;
+      if (checkedIngredients.length >= minIngredients) {
+        enoughChecked = true;
       }
     }
-    if (!twoChecked) {
-      alert('Devi selezionare almeno 2 ingredienti');
+    if (!enoughChecked) {
+      alert('Devi selezionare almeno ' + minIngredients + ' ingredienti');
     } else {
 
       // Calcolo prezzo totale
-      var totalPrice = parsedPrice;
+      totalPrice = parsedPrice;
       for (var z = 0; z < checkedIngredients.length; z++) {
         if (checkedIngredients[z].value.indexOf('.') > -1) {
-          totalPrice += parseFloat(checkedIngredients[z].value);
+          totalPrice += parseFloat(checkedIngredients[z].value); // In caso il valore sia decimale
         } else {
           totalPrice += parseInt(checkedIngredients[z].value);
         }
